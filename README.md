@@ -1,2 +1,2 @@
 ## Hello.
-This is a repo for my website. That's pretty much it.
+This is a repo for my website.
