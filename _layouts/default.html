@@ -32,10 +32,12 @@
         {% endif %}
    
         {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        <i class="fab fa-github fa-3x"></i>
+        
+        <!--><p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p><-->
+        
+        <i class="fab fa-github fa-3x"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></i>
         &nbsp; &nbsp; &nbsp;
-        <i class="fab fa-linkedin fa-3x"></i>
+        <i class="fab fa-linkedin fa-3x"><a href="https://www.linkedin.com/in/william-nguyen-934552194"></a></i>
         {% endif %}
 
         {% if site.show_downloads %}
