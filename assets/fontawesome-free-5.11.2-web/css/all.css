@@ -1799,7 +1799,7 @@ readers do not read off random characters that represent icons */
   color: black; }
 
 .fa-github:hover {
-  color: blue; }
+  color: #0e76a8; }
 
 .fa-github-alt:before {
   content: "\f113"; }
@@ -2414,7 +2414,7 @@ readers do not read off random characters that represent icons */
   content: "\f08c"; }
 
 .fa-linkedin:hover {
-  color: blue; }
+  color: #0e76a8; }
 
 .fa-linkedin-in:before {
   content: "\f0e1"; }
