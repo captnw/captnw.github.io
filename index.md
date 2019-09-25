@@ -5,4 +5,4 @@ I'm an undergraduate attending UCI for a computer game science degree. I like ar
 ## Things you may be interested in
 
 - **[My resume](assets/documents/UCI_resume.pdf).**
-- **[My projects](./another-page.html).**
+- **[My projects](https://captnw.github.io/project_display/).**
