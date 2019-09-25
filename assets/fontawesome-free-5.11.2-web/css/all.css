@@ -1795,11 +1795,10 @@ readers do not read off random characters that represent icons */
   content: "\f1d2"; }
 
 .fa-github:before {
-  content: "\f09b";
-  color: black; }
+  content: "\f09b"; }
 
 .fa-github:hover {
-  color: #0e76a8; }
+  color: #333; }
 
 .fa-github-alt:before {
   content: "\f113"; }
