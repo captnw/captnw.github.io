@@ -11,6 +11,15 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    
+    .fa-github:hover {
+      color: blue;
+    }
+    
+    .fa-linkedin:hover {
+      color: blue;
+    }
+    
   </head>
   <body>
     <div class="wrapper">
@@ -19,6 +28,7 @@
         
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <br /> 
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
