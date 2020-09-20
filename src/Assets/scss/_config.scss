@@ -1,0 +1,58 @@
+/* Color vars */
+$black: #010000;
+$softBlack: #24292d;
+$darkGrey: #333;
+$lightGrey: #e6e6e6;
+$lighterGrey: #f7f7f7;
+$white: #ffffff;
+
+$red: #ff1755;
+$orange: #ffa264;
+$softBlue: #0077b4;
+$navyBlue: #0d5174;
+
+/* Mixins */
+
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($e) {
+    -webkit-transition:$e;
+    -moz-transition:$e;
+    transition:$e;
+}
+
+/* Fonts -
+    Fontname: Roboto
+    Regular 400
+    Regular 400 italic
+    Bold 700
+    Bold 700 italic
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: $black;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+
+    a:hover {
+        color: $black;
+        @include transition(.4s ease-in-out);
+    }
+}
+
+.container-fluid {
+    line-height: 24px;
+}
+

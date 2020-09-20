@@ -1,0 +1,138 @@
+@import "_config.scss";
+
+// large rules (sorted alphabetically)
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: $orange;
+    color: $white;
+    height: 90px; // default height
+
+    .logo {
+        position: absolute;
+        top: 50%; left: 15px;
+        @include translateY(-50%);
+    }
+
+    nav,
+    nav ul,
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        position: absolute;
+        top: 50%; left: 1%; // 15px + 60px (for the logo)
+        @include translateY(-50%);
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 20px;
+
+            &.last {
+                margin: 0;
+            }
+            
+            a {
+                font-size: 30px;
+                line-height: normal;
+                color: $white;
+            }
+            
+            a:hover {
+                color: $black;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+// small rules (also sorted alphabetically)
+
+body {
+    background: $lighterGrey;
+}
+
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerOfScreen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-height: 90vh;
+}
+
+#GithubIconTheme {
+    color: $darkGrey;
+    &:hover {
+        color: $black;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body, #app, #app>div {
+    height: 100vh;
+}
+
+.horizontalCenter {
+    text-align: center;
+}
+
+.horizontalListItem {
+    display: inline-block;
+    margin-right: 20px;
+
+    &.last {
+        margin: 0px;
+    }
+}
+
+.largeText {
+    font-size: 300%;
+}
+
+#LinkedinIconTheme {
+    color: $softBlue;
+    &:hover {
+        color: $navyBlue;
+    }
+}
+
+.noBulletList{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.orangeText {
+    color: $orange;
+}
+
+.paddingLeft {
+    margin-left: 20px;
+}
+
+.veryLargeText {
+    font-size: 600%;
+}
+
+.whiteBackground {
+    background: $white;
+}
