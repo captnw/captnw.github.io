@@ -1,6 +1,15 @@
 import React from "react";
 import screenshot1 from "../../Assets/images/MoneyPay_1.jpg";
+import ReactGA from "react-ga";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// Google analytics functions declaration (users doing specific stuff)
+const DownloadMoneyPayphone = () => {
+  ReactGA.event({
+    category: "Projects page",
+    action: "Went to MoneyPayphone downloads",
+  });
+};
 
 // Your average social media bar. Should be imported in one of the pages, NOT APP.JS
 function MoneyPayphone() {
@@ -51,6 +60,7 @@ function MoneyPayphone() {
               target="_blank"
               rel="noopener noreferrer"
               title="Github download page for the project."
+              onClick={DownloadMoneyPayphone}
             >
               Download this project.
             </a>

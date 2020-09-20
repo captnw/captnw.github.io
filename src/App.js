@@ -1,6 +1,7 @@
 // includes
 import "./Assets/css/default.min.css"; // our custom css
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // components
@@ -11,6 +12,13 @@ import ProjectsPage from "./components/pages/projectsPage";
 import NoMatch from "./components/pages/noMatch";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("UA-148738592-1")
+
+    // to report page view
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
+
   return (
     <div className="App">
       <Router>
