@@ -1,5 +1,5 @@
 import React from "react";
-import resumePdf from "../../Assets/files/OldResume.pdf"
+import resumePdf from "../../Assets/files/MyResume.pdf"
 
 function ResumePage() {
   return (
