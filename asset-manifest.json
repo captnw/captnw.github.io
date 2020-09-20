@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a43934d.chunk.css",
+    "main.js": "/static/js/main.eb775825.chunk.js",
+    "main.js.map": "/static/js/main.eb775825.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.229f073a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.229f073a.js.map",
+    "static/js/2.0585ef59.chunk.js": "/static/js/2.0585ef59.chunk.js",
+    "static/js/2.0585ef59.chunk.js.map": "/static/js/2.0585ef59.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c074118097edc633d85f4ddf56795be1.js": "/precache-manifest.c074118097edc633d85f4ddf56795be1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3a43934d.chunk.css.map": "/static/css/main.3a43934d.chunk.css.map",
+    "static/js/2.0585ef59.chunk.js.LICENSE.txt": "/static/js/2.0585ef59.chunk.js.LICENSE.txt",
+    "static/media/MoneyPay_1.jpg": "/static/media/MoneyPay_1.6b22e480.jpg",
+    "static/media/OldResume.pdf": "/static/media/OldResume.ef860724.pdf",
+    "static/media/SimpleDungeon_1.jpg": "/static/media/SimpleDungeon_1.cfa3b893.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.229f073a.js",
+    "static/js/2.0585ef59.chunk.js",
+    "static/css/main.3a43934d.chunk.css",
+    "static/js/main.eb775825.chunk.js"
+  ]
+}
