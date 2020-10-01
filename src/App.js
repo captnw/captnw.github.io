@@ -13,21 +13,21 @@ import NoMatch from "./components/pages/noMatch";
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize("UA-148738592-1")
+    ReactGA.initialize("UA-148738592-1");
 
     // to report page view
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [])
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div className="App">
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/resume" component={ResumePage} />
-          <Route path="/projects" component={ProjectsPage} />
-          <Route component={NoMatch}></Route>
+          <Route path="/" exact component={Homepage} />
+          <Route path="/resume" exact component={ResumePage} />
+          <Route path="/projects" exact component={ProjectsPage} />
+          <Route component={NoMatch} />
         </Switch>
       </Router>
     </div>

@@ -71,6 +71,11 @@ body {
     align-items: center;
 }
 
+.centerPdfDocument {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     min-height: 90vh;
 }
@@ -135,4 +140,12 @@ html, body, #app, #app>div {
 
 .whiteBackground {
     background: $white;
+}
+
+.whiteTextButton {
+    color: $white;
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
 }
