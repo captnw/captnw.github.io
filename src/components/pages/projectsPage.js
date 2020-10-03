@@ -1,6 +1,8 @@
 import React from "react";
-import MoneyPayphone from "../projects/moneyPayphone";
-import SimpleDungeon from "../projects/simpleDungeon";
+// Projects
+import MoneyPayphone from "../projectComponents/projects/moneyPayphone";
+import SimpleDungeon from "../projectComponents/projects/simpleDungeon";
+import JohnJumper from "../projectComponents/projects/johnJumper";
 
 function ProjectsPage() {
   return (
@@ -19,28 +21,31 @@ function ProjectsPage() {
       </p>
       <p>
         <b>
-          Note: currently games are downloadable .exe files, I will get the
-          games running in the browser if you don't wish to download some random
-          .exe file to try out these games/projects.
+          Note: games are playable in the browser only if they have an "itch.io" button.
         </b>
       </p>
       <br />
       <div className="horizontalCenter">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/captnw/project_display"
-          title="My projects's Github page"
-        >
-          View all of my projects on Github
-        </a>
+        <button type="button" className="btn btn-primary">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/captnw/project_display"
+            title="My projects's Github page"
+            className="whiteTextButton"
+          >
+            View all of my projects on Github
+          </a>
+        </button>
       </div>
       <hr></hr>
-      
+
       {/* Place projects under here! */}
-      <MoneyPayphone/>
+      <JohnJumper />
       <hr></hr>
-      <SimpleDungeon/>
+      <MoneyPayphone />
+      <hr></hr>
+      <SimpleDungeon />
     </div>
   );
 }

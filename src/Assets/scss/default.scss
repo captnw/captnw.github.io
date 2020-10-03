@@ -58,6 +58,11 @@ body {
     background: $lighterGrey;
 }
 
+button {
+    display: inline-flex;
+    align-items: center;
+}
+
 .centerImage {
     display: block;
     margin-left: auto;
@@ -80,6 +85,13 @@ body {
     min-height: 90vh;
 }
 
+// used for dividing buttons
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+
 #GithubIconTheme {
     color: $darkGrey;
     &:hover {
@@ -90,6 +102,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 html, body, #app, #app>div {
