@@ -23,7 +23,9 @@ function JohnJumper() {
         <h2 className="orangeText">JohnJumper</h2>
       </i>
       <b>
-        <p>September 27, 2020</p>
+        <p>
+          <span class="badge badge-success">Released</span> September 27, 2020
+        </p>
       </b>
       {/** The tags describing the project. **/}
       <div className="horizontalCenter">

@@ -23,7 +23,9 @@ function MoneyPayphone() {
         <h2 className="orangeText">Money for a payphone</h2>
       </i>
       <b>
-        <p>June 12, 2019</p>
+        <p>
+          <span class="badge badge-success">Released</span> June 12, 2019
+        </p>
       </b>
       {/** The tags describing the project. **/}
       <div className="horizontalCenter">
@@ -47,8 +49,8 @@ function MoneyPayphone() {
         <p>
           A talking "adventure" game where you have to go and talk to the
           inhabitants around your town in order to earn enough money to use a
-          payphone. Your choices determine what ending you would see when you finish 
-          the game.
+          payphone. Your choices determine what ending you would see when you
+          finish the game.
         </p>
         <button type="button" className="btn btn-primary">
           <a

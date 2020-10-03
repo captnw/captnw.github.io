@@ -11,7 +11,7 @@ import ResumePage from "./components/pages/resumePage";
 import ProjectsPage from "./components/pages/projectsPage";
 import NoMatch from "./components/pages/noMatch";
 
-function App() {
+function Website() {
   useEffect(() => {
     ReactGA.initialize("UA-148738592-1");
 
@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="fullishHeight">
       <Router>
         <Header />
         <Switch>
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Website;

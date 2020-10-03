@@ -23,7 +23,9 @@ function SimpleDungeon() {
         <h2 className="orangeText">Escape the simple dungeon</h2>
       </i>
       <b>
-        <p>June 1, 2018</p>
+        <p>
+          <span class="badge badge-success">Released</span> June 1, 2018
+        </p>
       </b>
       {/** The tags describing the project. **/}
       <div className="horizontalCenter">
@@ -41,7 +43,7 @@ function SimpleDungeon() {
       </div>
 
       <GalleryComponent images={screenshots} />
-      
+
       <br />
       <div className="horizontalCenter">
         <p>

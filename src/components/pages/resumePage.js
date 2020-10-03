@@ -15,16 +15,17 @@ function ResumePage() {
   });
 
   return (
-    <div className="container whiteBackground horizontalCenter">
+    <div className="container whiteBackground horizontalCenter fullishHeight">
       {isDesktopOrLaptop && (
-      <object
-        data={resumePdf}
-        type="application/pdf"
-        width="100%"
-        height="900vh"
-      >
-        Pdf not found.
-      </object>)}
+        <object
+          data={resumePdf}
+          type="application/pdf"
+          width="100%"
+          height="100%"
+        >
+          Pdf not found.
+        </object>
+      )}
       {isTabletOrMobileDevice && (
         <>
           {/** Empty tag to organize the code better (for the mobile view) **/}

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 function GalleryComponent(props) {
   const images = props.images;
-  const [image_ind, setCount] = useState(0);
+  const [image_ind, setInd] = useState(0);
 
   return (
     <>
@@ -15,31 +15,36 @@ function GalleryComponent(props) {
           alt={"Image " + image_ind.toString()}
           className="responsive"
         ></img>
-        <br />
-        <h6>
-          <b>
-            Image #{image_ind + 1} out of {images.length} images
-          </b>
-        </h6>
-        <button
-          type="button"
-          class="btn btn-outline-secondary"
-          onClick={() =>
-            setCount(image_ind - 1 < 0 ? images.length - 1 : image_ind - 1)
-          }
-        >
-          Prev image
-        </button>
-        <div className="divider" />
-        <button
-          type="button"
-          class="btn btn-outline-secondary"
-          onClick={() =>
-            setCount(image_ind + 1 >= images.length ? 0 : image_ind + 1)
-          }
-        >
-          Next image
-        </button>
+        {/** Only include gallery feature if there is more than 1 image. **/}
+        {images.length >= 2 && (
+          <>
+            <br />
+            <h6>
+              <b>
+                Image #{image_ind + 1} out of {images.length} images
+              </b>
+            </h6>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              onClick={() =>
+                setInd(image_ind - 1 < 0 ? images.length - 1 : image_ind - 1)
+              }
+            >
+              Prev image
+            </button>
+            <div className="divider" />
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              onClick={() =>
+                setInd(image_ind + 1 >= images.length ? 0 : image_ind + 1)
+              }
+            >
+              Next image
+            </button>
+          </>
+        )}
       </div>
     </>
   );
