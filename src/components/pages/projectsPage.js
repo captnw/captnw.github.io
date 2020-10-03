@@ -25,20 +25,6 @@ function ProjectsPage() {
           Note: games are playable in the browser only if they have an "itch.io" button.
         </b>
       </p>
-      <br />
-      <div className="horizontalCenter">
-        <button type="button" className="btn btn-primary">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/captnw/project_display"
-            title="My projects's Github page"
-            className="whiteTextButton"
-          >
-            View all of my projects on Github
-          </a>
-        </button>
-      </div>
       <hr></hr>
 
       {/* Place projects under here! */}
