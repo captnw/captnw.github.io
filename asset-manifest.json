@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c532718b.chunk.css",
-    "main.js": "/static/js/main.3fd852b7.chunk.js",
-    "main.js.map": "/static/js/main.3fd852b7.chunk.js.map",
+    "main.css": "/static/css/main.ceeb571e.chunk.css",
+    "main.js": "/static/js/main.aeddd7dc.chunk.js",
+    "main.js.map": "/static/js/main.aeddd7dc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.229f073a.js",
     "runtime-main.js.map": "/static/js/runtime-main.229f073a.js.map",
-    "static/js/2.a3b933e9.chunk.js": "/static/js/2.a3b933e9.chunk.js",
-    "static/js/2.a3b933e9.chunk.js.map": "/static/js/2.a3b933e9.chunk.js.map",
+    "static/js/2.c64ee888.chunk.js": "/static/js/2.c64ee888.chunk.js",
+    "static/js/2.c64ee888.chunk.js.map": "/static/js/2.c64ee888.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.96e55477b3c7d9f204d459b175a1346a.js": "/precache-manifest.96e55477b3c7d9f204d459b175a1346a.js",
+    "precache-manifest.5cc36c3f11628e142048bc0f089b4d68.js": "/precache-manifest.5cc36c3f11628e142048bc0f089b4d68.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.c532718b.chunk.css.map": "/static/css/main.c532718b.chunk.css.map",
-    "static/js/2.a3b933e9.chunk.js.LICENSE.txt": "/static/js/2.a3b933e9.chunk.js.LICENSE.txt",
+    "static/css/main.ceeb571e.chunk.css.map": "/static/css/main.ceeb571e.chunk.css.map",
+    "static/js/2.c64ee888.chunk.js.LICENSE.txt": "/static/js/2.c64ee888.chunk.js.LICENSE.txt",
+    "static/media/DiscordActivityBot_1.svg": "/static/media/DiscordActivityBot_1.330951c4.svg",
+    "static/media/DiscordActivityBot_2.JPG": "/static/media/DiscordActivityBot_2.36919c5a.JPG",
     "static/media/JohnJump_1.jpg": "/static/media/JohnJump_1.5b3fc18f.jpg",
     "static/media/JohnJump_2.jpg": "/static/media/JohnJump_2.1dab2ef1.jpg",
     "static/media/JohnJump_3.gif": "/static/media/JohnJump_3.cb06a8ac.gif",
@@ -19,15 +21,14 @@
     "static/media/MoneyPay_2.jpg": "/static/media/MoneyPay_2.87ef6612.jpg",
     "static/media/MoneyPay_3.gif": "/static/media/MoneyPay_3.3492ed51.gif",
     "static/media/MyResume.pdf": "/static/media/MyResume.f3191365.pdf",
-    "static/media/PlaceHolder.jpg": "/static/media/PlaceHolder.369389f8.jpg",
     "static/media/SimpleDungeon_1.jpg": "/static/media/SimpleDungeon_1.cfa3b893.jpg",
     "static/media/SimpleDungeon_2.jpg": "/static/media/SimpleDungeon_2.ca049931.jpg",
     "static/media/SimpleDungeon_3.gif": "/static/media/SimpleDungeon_3.910fa10d.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.229f073a.js",
-    "static/js/2.a3b933e9.chunk.js",
-    "static/css/main.c532718b.chunk.css",
-    "static/js/main.3fd852b7.chunk.js"
+    "static/js/2.c64ee888.chunk.js",
+    "static/css/main.ceeb571e.chunk.css",
+    "static/js/main.aeddd7dc.chunk.js"
   ]
 }
