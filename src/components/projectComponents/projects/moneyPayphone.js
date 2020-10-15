@@ -20,11 +20,11 @@ function MoneyPayphone() {
   return (
     <div>
       <i>
-        <h2 className="orangeText">Money for a payphone</h2>
+        <h2 className="orangeText thicker noPaddingBottom">Money for a payphone</h2>
       </i>
       <b>
         <p>
-          <span class="badge badge-success">Released</span> June 12, 2019
+          <span class="badge badge-success">Released</span><span class="badge badge-secondary">June 12, 2019</span>
         </p>
       </b>
       {/** The tags describing the project. **/}

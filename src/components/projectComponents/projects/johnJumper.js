@@ -20,11 +20,11 @@ function JohnJumper() {
   return (
     <div>
       <i>
-        <h2 className="orangeText">JohnJumper</h2>
+        <h2 className="orangeText thicker noPaddingBottom">JohnJumper</h2>
       </i>
       <b>
         <p>
-          <span class="badge badge-success">Released</span> September 27, 2020
+          <span class="badge badge-success">Released</span><span class="badge badge-secondary">September 27, 2020</span>
         </p>
       </b>
       {/** The tags describing the project. **/}

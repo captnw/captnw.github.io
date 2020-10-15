@@ -20,11 +20,11 @@ function SimpleDungeon() {
   return (
     <div>
       <i>
-        <h2 className="orangeText">Escape the simple dungeon</h2>
+        <h2 className="orangeText thicker noPaddingBottom">Escape the simple dungeon</h2>
       </i>
       <b>
         <p>
-          <span class="badge badge-success">Released</span> June 1, 2018
+          <span class="badge badge-success">Released</span><span class="badge badge-secondary">June 1, 2018</span>
         </p>
       </b>
       {/** The tags describing the project. **/}

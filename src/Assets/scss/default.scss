@@ -145,12 +145,24 @@ html, body, #app, #app>div {
     list-style-type: none;
 }
 
+.noPaddingBottom{
+    margin-bottom: 0;
+}
+
+.noPaddingTop{
+    margin-top: 0;
+}
+
 .orangeText {
     color: $orange;
 }
 
 .paddingLeft {
     margin-left: 20px;
+}
+
+.thicker {
+    font-weight: bolder
 }
 
 .veryLargeText {

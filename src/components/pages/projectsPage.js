@@ -3,7 +3,7 @@ import React from "react";
 import MoneyPayphone from "../projectComponents/projects/moneyPayphone";
 import SimpleDungeon from "../projectComponents/projects/simpleDungeon";
 import JohnJumper from "../projectComponents/projects/johnJumper";
-import DiscordUserBot from "../projectComponents/projects/discordUserBot";
+import DiscordActivityBot from "../projectComponents/projects/discordActivityBot";
 
 function ProjectsPage() {
   return (
@@ -28,9 +28,9 @@ function ProjectsPage() {
       <hr></hr>
 
       {/* Place projects under here! */}
-      <JohnJumper />
+      <DiscordActivityBot />
       <hr></hr>
-      <DiscordUserBot />
+      <JohnJumper />
       <hr></hr>
       <MoneyPayphone />
       <hr></hr>

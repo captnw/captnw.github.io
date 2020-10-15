@@ -3,9 +3,10 @@ import ReactGA from "react-ga";
 import GalleryComponent from "../galleryComponent";
 
 // Images
-import screenshot1 from "../../../Assets/images/PlaceHolder.jpg";
+import screenshot1 from "../../../Assets/images/DiscordActivityBot_1.svg";
+import screenshot2 from "../../../Assets/images/DiscordActivityBot_2.JPG";
 
-let screenshots = [screenshot1];
+let screenshots = [screenshot1, screenshot2];
 
 // Google analytics functions declaration (users doing specific stuff)
 const CheckDiscordUserBot = () => {
@@ -15,16 +16,22 @@ const CheckDiscordUserBot = () => {
   });
 };
 
-function DiscordUserBot() {
+function DiscordActivityBot() {
   return (
     <div>
       <i>
-        <h2 className="orangeText">DiscordUserBot</h2>
+        <h2 className="orangeText thicker noPaddingBottom">
+          DiscordActivityBot
+        </h2>
       </i>
       <b>
+        <p className="noPaddingBottom">
+          <span class="badge badge-warning">Last updated</span>
+          <span class="badge badge-secondary">October 14, 2020</span>
+        </p>
         <p>
-          <span class="badge badge-secondary">Last updated</span> August 18,
-          2020
+          <span class="badge badge-dark">Version</span>
+          <span class="badge badge-secondary">1.0.0</span>
         </p>
       </b>
       {/** The tags describing the project. **/}
@@ -50,8 +57,18 @@ function DiscordUserBot() {
           A discord bot that, when invited to a discord server, would track the
           online times of all the server's occupants. Users can request to see
           their own online activity, or check to see the cumulative activity of
-          the whole server. Stores user's online times for up to 10 days.
+          the whole server.
         </p>
+        <b><h4><u>Features</u></h4></b>
+        <ul>
+          <li>
+            Check your own online activity, or the activity of any server the
+            bot is in
+          </li>
+          <li>
+            See or adjust your timezone.
+          </li>
+        </ul>
         <button type="button" className="btn btn-primary">
           <a
             href="https://github.com/captnw/DiscordUserScheduleBot"
@@ -70,4 +87,4 @@ function DiscordUserBot() {
   );
 }
 
-export default DiscordUserBot;
+export default DiscordActivityBot;
