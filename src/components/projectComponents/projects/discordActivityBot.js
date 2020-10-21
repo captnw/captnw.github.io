@@ -5,8 +5,9 @@ import GalleryComponent from "../galleryComponent";
 // Images
 import screenshot1 from "../../../Assets/images/DiscordActivityBot_1.svg";
 import screenshot2 from "../../../Assets/images/DiscordActivityBot_2.JPG";
+import screenshot3 from "../../../Assets/images/DiscordActivityBot_3.jpg";
 
-let screenshots = [screenshot1, screenshot2];
+let screenshots = [screenshot1, screenshot2, screenshot3];
 
 // Google analytics functions declaration (users doing specific stuff)
 const CheckDiscordUserBot = () => {
