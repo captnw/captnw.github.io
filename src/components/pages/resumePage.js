@@ -2,7 +2,6 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import resumePdf from "../../Assets/files/MyResume.pdf"; // resume
 import ResizableResume from "../pdfComponents/resizableResume";
-import Button from "react-bootstrap/Button";
 // Resume page.
 
 function ResumePage() {
@@ -15,13 +14,12 @@ function ResumePage() {
   });
 
   return (
-    <div className="container whiteBackground horizontalCenter fullishHeight">
+    <div className="container whiteBackground horizontalCenter fullHeight">
       {isDesktopOrLaptop && (
         <object
           data={resumePdf}
           type="application/pdf"
-          width="100%"
-          height="100%"
+          className="fullWide fullHeight"
         >
           Pdf not found.
         </object>
@@ -30,8 +28,7 @@ function ResumePage() {
         <>
           {/** Empty tag to organize the code better (for the mobile view) **/}
           {/** Display a direct link to the pdf as well as the  **/}
-          <ResizableResume />
-          <Button variant="primary" id="whiteTextButton">
+          <button type="button" className="btn btn-primary isolatedButton">
             <b>
               <a
                 href={resumePdf}
@@ -40,10 +37,11 @@ function ResumePage() {
                 title="Download resume pdf"
                 className="whiteTextButton"
               >
-                Press here to download the pdf file.
+                Download the resume pdf file
               </a>
             </b>
-          </Button>
+          </button>
+          <ResizableResume/>
         </>
       )}
     </div>

@@ -28,7 +28,7 @@ function DiscordActivityBot() {
       <b>
         <p className="noPaddingBottom">
           <span class="badge badge-warning">Last updated</span>
-          <span class="badge badge-secondary">October 14, 2020</span>
+          <span class="badge badge-secondary">October 15, 2020</span>
         </p>
         <p>
           <span class="badge badge-dark">Version</span>

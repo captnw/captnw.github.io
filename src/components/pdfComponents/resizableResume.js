@@ -1,5 +1,5 @@
 import { Document, Page, pdfjs } from "react-pdf";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import throttle from "lodash.throttle";
 import ResumePdf from "../../Assets/files/MyResume.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`; // pdf worker needed to make react-pdf work
@@ -8,65 +8,58 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 // Conversation here: https://github.com/wojtekmaj/react-pdf/issues/129
 // Original raw code here: https://raw.githubusercontent.com/lucasveigaf/react-pdf-example/master/src/App.js
 
-// NOTE 9/30/2020:
-// Code is still using old "this" method to change state, suggest utilizing useState to refactor? (if I can figure how to change this class into a regular function)
+// NOTE 10/29/2020:
+// Rewrote the class into a function by utilizing react hooks instead
 
-class ResizableResume extends React.Component {
-  constructor() {
-    super();
-    this.state = { width: null };
-    this.throttledSetDivSize = throttle(this.setDivSize, 500);
-  }
+function ResizableResume(props) {
+  const [width, setDivSize] = useState(null);
+  let throttledSetDivSize = throttle(setDivSize, 500);
+  let pdfWrapper = null;
 
-  componentDidMount() {
-    this.setDivSize();
-    window.addEventListener("resize", this.throttledSetDivSize);
-  }
+  useEffect(() => {
+    // Acts the same as componentDidMount
+    setDivSize(pdfWrapper.getBoundingClientRect().width);
+    window.addEventListener("resize", throttledSetDivSize);
 
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.throttledSetDivSize);
-  }
+    // Specify how to clean up after this effect:
+    // The return function acts the same as componentWillUnmount
+    return function cleanup() {
+      window.removeEventListener("resize", throttledSetDivSize);
+    };
+  }, [pdfWrapper, throttledSetDivSize]);
 
-  setDivSize = () => {
-    this.setState({ width: this.pdfWrapper.getBoundingClientRect().width });
-  };
-
-  render() {
-    return (
+  return (
+    <div
+      id="row"
+      className="fullishHeight fullWide"
+      style={{
+        width: "100%", // modified from 100vw to 100%
+        display: "flex",
+        overflow: "hidden",
+      }}
+    >
+      {/** Unnecessary div preventing the pdf from taking the size of the container **/}
+      {/**<div id="placeholderWrapper" style={{ width: "10vw", height: "10vh" }} />**/}
       <div
-        id="row"
-        style={{
-          height: "100%", // modified from 100vh to 100%
-          width: "100%", // modified from 100vw to 100%
-          display: "flex",
-          overflow: "hidden",
-        }}
+        id="pdfWrapper"
+        style={{ width: "100%" }}
+        ref={(ref) => (pdfWrapper = ref)}
       >
-        {/** Unnecessary div preventing the pdf from taking the size of the container **/}
-        {/**<div id="placeholderWrapper" style={{ width: "10vw", height: "10vh" }} />**/}
-        <div
-          id="pdfWrapper"
-          style={{ width: "90vw" }}
-          ref={(ref) => (this.pdfWrapper = ref)}
-        >
-          <PdfComponent wrapperDivSize={this.state.width} />
-        </div>
+        <PdfComponent wrapperDivSize={width} />
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-class PdfComponent extends React.Component {
-  render() {
-    return (
-      <div>
-        <Document file={ResumePdf}>
-          {/** pageIndex modified from 1 to 0 (there was an error, trust me.) **/}
-          <Page pageIndex={0} width={this.props.wrapperDivSize} /> 
-        </Document>
-      </div>
-    );
-  }
+function PdfComponent(props) {
+  return (
+    <div>
+      <Document file={ResumePdf}>
+        {/** pageIndex modified from 1 to 0 (there was an error, trust me.) **/}
+        <Page pageIndex={0} width={props.wrapperDivSize} />
+      </Document>
+    </div>
+  );
 }
 
 export default ResizableResume;

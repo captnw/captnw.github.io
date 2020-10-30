@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logoInactive from "../../Assets/images/logo84.png";
-import logoActive from "../../Assets/images/logo84dark.png";
+import svgLogoInactive from "../../Assets/images/logoLight.svg";
+import svgLogoActive from "../../Assets/images/logoDark.svg";
+import logoActive from "../../Assets/images/logo84.png";
+import logoInactive from "../../Assets/images/logo84dark.png";
 import ReactGA from "react-ga";
 
 // The large orange bootstrap container at the top of each page.
@@ -22,6 +24,7 @@ const ViewProjects = () => {
 };
 
 function Header() {
+  const svgImages = [svgLogoInactive, svgLogoActive];
   const images = [logoInactive, logoActive];
   const [image_ind, setInd] = useState(0);
   return (
@@ -35,6 +38,7 @@ function Header() {
                 id="siteLogo"
                 className="logo"
                 src={images[image_ind]}
+                srcSet={svgImages[image_ind]}
                 alt=""
                 onMouseOver={() =>
                   setInd(1)
