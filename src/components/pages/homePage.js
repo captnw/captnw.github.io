@@ -10,7 +10,8 @@ function Homepage() {
       <h1 className="largeText horizontalCenter">William Nguyen</h1>
       <h3><b>Bio</b></h3>
       <br/>
-      <p className="horizontalCenter">I'm an undergraduate student attending UCI for a computer science and computer game science degree.</p>
+      <p className="horizontalCenter">I'm a 3rd year undergraduate UCI student double-majoring in computer science and computer game science.</p>
+      <p className="horizontalCenter">Currently seeking software engineer summer internships.</p>
       <hr></hr>
       <SocialMedia/>
     </div>
