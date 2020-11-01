@@ -1,6 +1,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import resumePdf from "../../Assets/files/MyResume.pdf"; // resume
+import resumePdf from "../../Assets/files/WilliamNguyenResume.pdf"; // resume
 import ResizableResume from "../pdfComponents/resizableResume";
 // Resume page.
 
@@ -41,7 +41,7 @@ function ResumePage() {
               </a>
             </b>
           </button>
-          <ResizableResume/>
+          <ResizableResume resume={resumePdf}/>
         </>
       )}
     </div>

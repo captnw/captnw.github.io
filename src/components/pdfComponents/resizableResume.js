@@ -1,7 +1,6 @@
 import { Document, Page, pdfjs } from "react-pdf";
 import React, { useState, useEffect } from "react";
 import throttle from "lodash.throttle";
-import ResumePdf from "../../Assets/files/MyResume.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`; // pdf worker needed to make react-pdf work
 
 // Modified code from @lucasveigaf from this conversation about react-pdf resizing and 100% width
@@ -45,7 +44,7 @@ function ResizableResume(props) {
         style={{ width: "100%" }}
         ref={(ref) => (pdfWrapper = ref)}
       >
-        <PdfComponent wrapperDivSize={width} />
+        <PdfComponent wrapperDivSize={width} resume={props.resume} />
       </div>
     </div>
   );
@@ -54,7 +53,7 @@ function ResizableResume(props) {
 function PdfComponent(props) {
   return (
     <div>
-      <Document file={ResumePdf}>
+      <Document file={props.resume}>
         {/** pageIndex modified from 1 to 0 (there was an error, trust me.) **/}
         <Page pageIndex={0} width={props.wrapperDivSize} />
       </Document>
