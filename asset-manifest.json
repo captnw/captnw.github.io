@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.6b171898.chunk.css",
-    "main.js": "/static/js/main.a4a95aac.chunk.js",
-    "main.js.map": "/static/js/main.a4a95aac.chunk.js.map",
+    "main.js": "/static/js/main.ed408432.chunk.js",
+    "main.js.map": "/static/js/main.ed408432.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.229f073a.js",
     "runtime-main.js.map": "/static/js/runtime-main.229f073a.js.map",
-    "static/js/2.6ce84b0a.chunk.js": "/static/js/2.6ce84b0a.chunk.js",
-    "static/js/2.6ce84b0a.chunk.js.map": "/static/js/2.6ce84b0a.chunk.js.map",
+    "static/js/2.a885c4c1.chunk.js": "/static/js/2.a885c4c1.chunk.js",
+    "static/js/2.a885c4c1.chunk.js.map": "/static/js/2.a885c4c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e111d2a686227036f71be55822fa8c04.js": "/precache-manifest.e111d2a686227036f71be55822fa8c04.js",
+    "precache-manifest.e8cc72e34d88fbd85181b7ede265b041.js": "/precache-manifest.e8cc72e34d88fbd85181b7ede265b041.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.6b171898.chunk.css.map": "/static/css/main.6b171898.chunk.css.map",
-    "static/js/2.6ce84b0a.chunk.js.LICENSE.txt": "/static/js/2.6ce84b0a.chunk.js.LICENSE.txt",
+    "static/js/2.a885c4c1.chunk.js.LICENSE.txt": "/static/js/2.a885c4c1.chunk.js.LICENSE.txt",
     "static/media/DiscordActivityBot_1.svg": "/static/media/DiscordActivityBot_1.330951c4.svg",
     "static/media/DiscordActivityBot_2.JPG": "/static/media/DiscordActivityBot_2.36919c5a.JPG",
     "static/media/DiscordActivityBot_3.jpg": "/static/media/DiscordActivityBot_3.93dccc2d.jpg",
@@ -21,17 +21,17 @@
     "static/media/MoneyPay_1.jpg": "/static/media/MoneyPay_1.6b22e480.jpg",
     "static/media/MoneyPay_2.jpg": "/static/media/MoneyPay_2.87ef6612.jpg",
     "static/media/MoneyPay_3.gif": "/static/media/MoneyPay_3.3492ed51.gif",
-    "static/media/MyResume.pdf": "/static/media/MyResume.02614156.pdf",
     "static/media/SimpleDungeon_1.jpg": "/static/media/SimpleDungeon_1.cfa3b893.jpg",
     "static/media/SimpleDungeon_2.jpg": "/static/media/SimpleDungeon_2.ca049931.jpg",
     "static/media/SimpleDungeon_3.gif": "/static/media/SimpleDungeon_3.910fa10d.gif",
+    "static/media/WilliamNguyenResume.pdf": "/static/media/WilliamNguyenResume.23b34678.pdf",
     "static/media/logoDark.svg": "/static/media/logoDark.38616294.svg",
     "static/media/logoLight.svg": "/static/media/logoLight.047727f7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.229f073a.js",
-    "static/js/2.6ce84b0a.chunk.js",
+    "static/js/2.a885c4c1.chunk.js",
     "static/css/main.6b171898.chunk.css",
-    "static/js/main.a4a95aac.chunk.js"
+    "static/js/main.ed408432.chunk.js"
   ]
 }
