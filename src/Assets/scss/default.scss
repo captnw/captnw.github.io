@@ -66,6 +66,43 @@ button {
     align-items: center;
 }
 
+.buttonLeft, .buttonRight{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.buttonRight:active, .buttonRight:hover {
+    background-color:$lightGrey;
+    color: $softBlack;
+    opacity: 0.3;
+    border: none;
+}
+
+.buttonLeft:active, .buttonLeft:hover {
+    background-color:$lightGrey;
+    color: $softBlack;
+    opacity: 0.3;
+    border: none;
+}
+
+.buttonLeft {
+    left: 0%;
+}
+
+.buttonRight {
+    left: 80%;
+}
+
+.centerArrow {
+    margin: auto;
+    width: 50%;
+}
+
 .centerImage {
     display: block;
     margin-left: auto;
@@ -88,11 +125,33 @@ button {
     min-height: 90vh;
 }
 
+// gallery component
+.containerImage {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    border: none;
+}
+
 // used for dividing buttons
-.divider{
+.divider {
     width:10px;
     height:auto;
     display:inline-block;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: $lightGrey;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: $orange;
 }
 
 .fullHeight {
@@ -129,12 +188,25 @@ img {
     margin: 20px;
 }
 
+.imgGreyRoundedBorder {
+    border: 4px solid $lightGrey;
+    border-radius: 2px;
+}
+
 html, body, #app, #app>div {
     height: 100%
 }
 
 .horizontalCenter {
     text-align: center;
+}
+
+#horizontalList ul {
+    list-style: none;
+}
+
+#horizontalList li {
+    display: inline;
 }
 
 .horizontalListItem {
@@ -177,6 +249,14 @@ html, body, #app, #app>div {
 
 .paddingLeft {
     margin-left: 20px;
+}
+
+.paddingBottom {
+    margin-bottom: 20px;
+}
+
+.tag {
+    margin: 0 4px;
 }
 
 .thicker {

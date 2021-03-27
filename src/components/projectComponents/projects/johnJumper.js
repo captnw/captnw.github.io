@@ -1,14 +1,23 @@
 import React from "react";
 import ReactGA from "react-ga";
+
+import HeaderComponent from "../headerComponent";
+import TagComponent from "../tagComponent";
 import GalleryComponent from "../galleryComponent";
 
 // Images
 import screenshot1 from "../../../Assets/images/JohnJump_1.jpg";
 import screenshot2 from "../../../Assets/images/JohnJump_2.jpg";
 import gif1 from "../../../Assets/images/JohnJump_3.gif";
-let screenshots = [screenshot1, screenshot2, gif1];
 
 // Google analytics functions declaration (users doing specific stuff)
+const CheckJohnJumper = () => {
+  ReactGA.event({
+    category: "Projects page",
+    action: "Went to JohnJumper itch.io",
+  });
+};
+
 const DownloadJohnJumper = () => {
   ReactGA.event({
     category: "Projects page",
@@ -17,41 +26,41 @@ const DownloadJohnJumper = () => {
 };
 
 function JohnJumper() {
+  const title = "JohnJumper";
+  const date = "September 27, 2020";
+  const status = "Released";
+  const version = "1.0.1";
+
+  const screenshots = [screenshot1, screenshot2, gif1];
+  const tags = ["Game", "2D", "Infinite scroller", "Unity", "Sound included"];
+
   return (
     <div>
-      <i>
-        <h2 className="orangeText thicker noPaddingBottom">JohnJumper</h2>
-      </i>
-      <b>
-        <p>
-          <span class="badge badge-success">Released</span><span class="badge badge-secondary">September 27, 2020</span>
-        </p>
-      </b>
-      {/** The tags describing the project. **/}
-      <div className="horizontalCenter">
-        <h6>
-          <span className="badge badge-secondary">Game</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">2D</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">Infinite scroller</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">Unity</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">Sound included</span>
-        </h6>
-      </div>
+      <HeaderComponent
+        title={title}
+        date={date}
+        version={version}
+        status={status}
+      />
 
+      <TagComponent tagList={tags} />
       <GalleryComponent images={screenshots} />
 
-      <br />
       <div className="horizontalCenter">
-        <p>
-          An infinite jumping game where there is only one button, the jump
-          button. Keep jumping to reach further heights, and jump consecutively
-          to increase your jump combo, which would increase your speed. Be sure
-          not to touch the spikes or fall back to the bottom.
-        </p>
+        <p>Vertical flappy-bird, but without the addictive gameplay.</p>
+        <button type="button" className="btn btn-primary">
+          <a
+            href="https://github.com/captnw/JohnJumper"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Github repo for the project."
+            className="whiteTextButton"
+            onClick={CheckJohnJumper}
+          >
+            Github repo
+          </a>
+        </button>
+        <div className="divider"></div>
         <button type="button" className="btn btn-success">
           <a
             href="https://captnw.itch.io/johnjumper"

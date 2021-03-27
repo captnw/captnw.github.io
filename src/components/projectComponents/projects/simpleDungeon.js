@@ -1,12 +1,14 @@
 import React from "react";
 import ReactGA from "react-ga";
+
+import HeaderComponent from "../headerComponent";
+import TagComponent from "../tagComponent";
 import GalleryComponent from "../galleryComponent";
 
 // Images
 import screenshot1 from "../../../Assets/images/SimpleDungeon_1.jpg";
 import screenshot2 from "../../../Assets/images/SimpleDungeon_2.jpg";
 import gif1 from "../../../Assets/images/SimpleDungeon_3.gif";
-let screenshots = [screenshot1, screenshot2, gif1];
 
 // Google analytics functions declaration (users doing specific stuff)
 const DownloadSimpleDungeon = () => {
@@ -17,39 +19,29 @@ const DownloadSimpleDungeon = () => {
 };
 
 function SimpleDungeon() {
+  const title = "Escape the simple dungeon";
+  const date = "June 1, 2018";
+  const status = "Released";
+  const version = "1.0.0";
+
+  const screenshots = [screenshot1, screenshot2, gif1];
+  const tags = ["Game", "2D", "Text adventure", "Python", "No sound"];
+
   return (
     <div>
-      <i>
-        <h2 className="orangeText thicker noPaddingBottom">Escape the simple dungeon</h2>
-      </i>
-      <b>
-        <p>
-          <span class="badge badge-success">Released</span><span class="badge badge-secondary">June 1, 2018</span>
-        </p>
-      </b>
-      {/** The tags describing the project. **/}
-      <div className="horizontalCenter">
-        <h6>
-          <span className="badge badge-secondary">Game</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">2D</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">Text adventure</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">Python</span>
-          <div className="divider"></div>
-          <span className="badge badge-secondary">No sound</span>
-        </h6>
-      </div>
-
+      <HeaderComponent
+        title={title}
+        date={date}
+        version={version}
+        status={status}
+      />
+      <TagComponent tagList={tags} />
       <GalleryComponent images={screenshots} />
 
-      <br />
       <div className="horizontalCenter">
         <p>
-          A text adventure game in which you type commands to navigate your way
-          through a randomly generated dungeon. The game has a (very) basic
-          inventory and combat system.
+          If you're in the niche audience who likes text-based games and turn
+          based combat, you may be interested in this game.
         </p>
         <button type="button" className="btn btn-primary">
           <a

@@ -6,10 +6,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // components
 import Header from "./components/headerComponents/header";
-import Homepage from "./components/pages/homePage";
-import ResumePage from "./components/pages/resumePage";
-import ProjectsPage from "./components/pages/projectsPage";
-import NoMatch from "./components/pages/noMatch";
+import Homepage from "./pages/homePage";
+import ResumePage from "./pages/resumePage";
+import ProjectsPage from "./pages/projectsPage";
+import NoMatch from "./pages/noMatch";
 
 function Website() {
   useEffect(() => {
