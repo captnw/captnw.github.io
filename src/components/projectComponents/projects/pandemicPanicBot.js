@@ -7,6 +7,7 @@ import GalleryComponent from "../galleryComponent";
 
 // Images
 import screenshot1 from "../../../Assets/images/PandemicPanicBot_1.jpg";
+import screenshot2 from "../../../Assets/images/PandemicPanicBot_2.jpg";
 
 // Google analytics functions declaration (users doing specific stuff)
 const CheckPandemicPanicBot = () => {
@@ -22,7 +23,7 @@ function PandemicPanicBot() {
   const status = "Last updated";
   const version = "1.0.0";
 
-  const screenshots = [screenshot1];
+  const screenshots = [screenshot1, screenshot2];
   const tags = [
     "Project",
     "Discord bot",

@@ -131,7 +131,6 @@ button {
     left: 10%;
     width: 80%;
     height: auto;
-    border: none;
 }
 
 // used for dividing buttons
@@ -199,14 +198,19 @@ html, body, #app, #app>div {
 
 .horizontalCenter {
     text-align: center;
+    
+    &#shiftLeft {
+        position:relative;
+        left: -1.25%;
+    }
 }
 
-#horizontalList ul {
+ul.horizontalList  {
     list-style: none;
-}
-
-#horizontalList li {
-    display: inline;
+    
+    li {
+        display: inline;
+    }
 }
 
 .horizontalListItem {

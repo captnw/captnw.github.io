@@ -15,9 +15,9 @@ function TagComponent(props) {
   }
 
   return (
-    <div className="horizontalCenter noPaddingBottom" id="horizontalList">
+    <div className="noPaddingBottom">
       <h6>
-        <ul>{tagComponentList}</ul>
+        <ul className="horizontalCenter horizontalList">{tagComponentList}</ul>
       </h6>
     </div>
   );
