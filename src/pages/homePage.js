@@ -16,9 +16,6 @@ function Homepage() {
         I'm a 3rd year undergraduate UCI student double-majoring in computer
         science and computer game science.
       </p>
-      <p className="horizontalCenter">
-        Currently seeking a software engineer summer internship.
-      </p>
       <hr></hr>
       <SocialMedia />
     </div>
