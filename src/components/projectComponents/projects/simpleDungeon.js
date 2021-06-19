@@ -43,42 +43,48 @@ function SimpleDungeon() {
           If you're in the niche audience who likes text-based games and turn
           based combat, you may be interested in this game.
         </p>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
             href="https://github.com/captnw/project_display/blob/master/Escape_the_simple_dungeon/PROJECTREADME.md"
             target="_blank"
             rel="noopener noreferrer"
             title="More info about the project"
             className="whiteTextButton"
-          >
+        >
+          <button type="button" className="btn btn-primary">
             More info
-          </a>
-        </button>
+          </button>
+        </a>
+
         <div className="divider"></div>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
             href="https://github.com/captnw/project_display/tree/master/Escape_the_simple_dungeon"
             target="_blank"
             rel="noopener noreferrer"
             title="Github repo for the project."
             className="whiteTextButton"
-          >
+        >
+          <button type="button" className="btn btn-primary">
             Github repo
-          </a>
-        </button>
+          </button>
+        </a>
+
         <div className="divider"></div>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
             href="https://github.com/captnw/project_display/tree/master/Escape_the_simple_dungeon/all_builds"
             target="_blank"
             rel="noopener noreferrer"
             title="Github download page for the project."
             className="whiteTextButton"
             onClick={DownloadSimpleDungeon}
-          >
+        >
+          <button type="button" className="btn btn-success">
             Download
-          </a>
-        </button>
+          </button>
+        </a>
+        
       </div>
       <br />
     </div>

@@ -10,6 +10,7 @@ import Homepage from "./pages/homePage";
 import ResumePage from "./pages/resumePage";
 import ProjectsPage from "./pages/projectsPage";
 import NoMatch from "./pages/noMatch";
+import ColormancyProjectPage from "./pages/colormancyProjectPage";
 
 function Website() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function Website() {
           <Route path="/" exact component={Homepage} />
           <Route path="/resume" exact component={ResumePage} />
           <Route path="/projects" exact component={ProjectsPage} />
+          <Route path="/projects/Colormancy" exact component={ColormancyProjectPage} />
           <Route component={NoMatch} />
         </Switch>
       </Router>

@@ -48,31 +48,35 @@ function JohnJumper() {
 
       <div className="horizontalCenter">
         <p>Vertical flappy-bird, but without the addictive gameplay.</p>
-        <button type="button" className="btn btn-primary">
-          <a
+      
+        <a
             href="https://github.com/captnw/JohnJumper"
             target="_blank"
             rel="noopener noreferrer"
             title="Github repo for the project."
             className="whiteTextButton"
             onClick={CheckJohnJumper}
-          >
+        >
+          <button type="button" className="btn btn-primary">
             Github repo
-          </a>
-        </button>
+          </button> 
+        </a>
+
         <div className="divider"></div>
-        <button type="button" className="btn btn-success">
-          <a
+
+        <a
             href="https://captnw.itch.io/johnjumper"
             target="_blank"
             rel="noopener noreferrer"
             title="Github download page for the project."
             className="whiteTextButton"
             onClick={DownloadJohnJumper}
-          >
+        >
+          <button type="button" className="btn btn-success">
             Play in browser or download (Itch.io)
-          </a>
-        </button>
+          </button>
+        </a>
+        
       </div>
       <br />
     </div>

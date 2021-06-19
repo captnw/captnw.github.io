@@ -43,42 +43,48 @@ function MoneyPayphone() {
           You walk around, and you talk with the inhabitants of this town. Not
           much else happens.
         </p>
-        <button type="button" className="btn btn-primary">
-          <a
+        
+        <a
             href="https://github.com/captnw/project_display/blob/master/Money_for_a_payphone/PROJECTREADME.md"
             target="_blank"
             rel="noopener noreferrer"
             title="More info about the project"
             className="whiteTextButton"
-          >
+        >
+          <button type="button" className="btn btn-primary">
             More info
-          </a>
-        </button>
+          </button>
+        </a>
+
         <div className="divider"></div>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
             href="https://github.com/captnw/project_display/tree/master/Money_for_a_payphone"
             target="_blank"
             rel="noopener noreferrer"
             title="Github repo for the project."
             className="whiteTextButton"
-          >
+        >
+          <button type="button" className="btn btn-primary">
             Github repo
-          </a>
-        </button>
+          </button>
+        </a>
+
         <div className="divider"></div>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
             href="https://github.com/captnw/project_display/tree/master/Money_for_a_payphone/all_builds"
             target="_blank"
             rel="noopener noreferrer"
             title="Github download page for the project."
             className="whiteTextButton"
             onClick={DownloadMoneyPayphone}
-          >
+        >
+          <button type="button" className="btn btn-success">
             Download
-          </a>
-        </button>
+          </button>
+        </a>
+        
       </div>
       <br />
     </div>

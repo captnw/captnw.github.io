@@ -44,8 +44,6 @@ function PandemicPanicBot() {
       <TagComponent tagList={tags} />
       <GalleryComponent images={screenshots} />
 
-      <br />
-
       <div className="horizontalCenter">
         <p>
           A discord bot that hosts the Pandemic Panic game on any server. Only
@@ -56,44 +54,50 @@ function PandemicPanicBot() {
           More information about PandemicPanic and the bot itself can be found
           in the links below.
         </p>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
             href="https://github.com/captnw/PandemicPanicBot/blob/main/README.md"
             target="_blank"
             rel="noopener noreferrer"
             title="More information about the project."
             className="whiteTextButton"
             onClick={CheckPandemicPanicBot}
-          >
+        >
+          <button type="button" className="btn btn-primary">
             More info
-          </a>
-        </button>
+          </button>
+        </a>
+
         <div className="divider"></div>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
+            href="https://github.com/captnw/PandemicPanicBot"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Github download page for the project."
+            className="whiteTextButton"
+            onClick={CheckPandemicPanicBot}
+        >
+          <button type="button" className="btn btn-primary">
+            Github repo
+          </button>
+        </a>
+
+        <div className="divider"></div>
+
+        <a
             href="https://github.com/captnw/PandemicPanicBot/blob/main/InfoAboutProject/PPBotStateDiagram.pdf"
             target="_blank"
             rel="noopener noreferrer"
             title="More information about the project."
             className="whiteTextButton"
             onClick={CheckPandemicPanicBot}
-          >
+        >
+          <button type="button" className="btn btn-primary">
             Bot state diagram
-          </a>
-        </button>
-        <div className="divider"></div>
-        <button type="button" className="btn btn-primary">
-          <a
-            href="https://github.com/captnw/PandemicPanicBot"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Github repo for the project."
-            className="whiteTextButton"
-            onClick={CheckPandemicPanicBot}
-          >
-            Github repo
-          </a>
-        </button>
+          </button>
+        </a>
+        
       </div>
       <br />
     </div>

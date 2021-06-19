@@ -8,7 +8,8 @@ import GalleryComponent from "../galleryComponent";
 // Images
 import screenshot1 from "../../../Assets/images/Colormancy_1.JPG";
 import screenshot2 from "../../../Assets/images/Colormancy_2.JPG";
-import screenshot3 from "../../../Assets/images/Colormancy_3.gif";
+import screenshot3 from "../../../Assets/images/Colormancy_3.JPG";
+import gif1 from "../../../Assets/images/Colormancy_1.gif";
 
 // Google analytics functions declaration (users doing specific stuff)
 const CheckColormancy = () => {
@@ -20,11 +21,11 @@ const CheckColormancy = () => {
 
 function Colormancy() {
   const title = "Colormancy";
-  const date = "March 13, 2021";
+  const date = "June 13, 2021";
   const status = "Last updated";
-  const version = "0.3.0";
+  const version = "1.0.0";
 
-  const screenshots = [screenshot1, screenshot2, screenshot3];
+  const screenshots = [screenshot1, screenshot2, screenshot3, gif1];
   const tags = [
     "Game",
     "3D",
@@ -47,33 +48,50 @@ function Colormancy() {
 
       <div className="horizontalCenter">
         <p>
-          A multiplayer game created with Unity and the Photon network framework. 2-4 players would work together to paint the maps they're on and the fend off any incoming enemies.
+          A multiplayer game created with Unity and the Photon network framework. 1-4 player(s) would work together to paint the maps they're on and the fend off any incoming enemies.
         </p>
-        <button type="button" className="btn btn-primary">
-          <a
-            href="https://docs.google.com/document/d/1grMS0t6vFWo_L7KMkfW5mP7-KUXBDEYBIMxrwxCApbg/edit?usp=sharing"
-            target="_blank"
+        {/* <a
+            href="/projects/Colormancy"
+            target="_self"
             rel="noopener noreferrer"
-            title="More information about the project."
+            title="Colormancy project page"
             className="whiteTextButton"
             onClick={CheckColormancy}
-          >
-            Game design document
-          </a>
-        </button>
-        <div className="divider"></div>
-        <button type="button" className="btn btn-primary">
-          <a
+        >
+          <button type="button" className="btn btn-primary">
+            Test
+          </button>
+        </a>
+        
+        <div className="divider"></div> */}
+
+        <a
             href="https://github.com/mandarker/Chromaturgy"
             target="_blank"
             rel="noopener noreferrer"
             title="Github repo for the project."
             className="whiteTextButton"
             onClick={CheckColormancy}
-          >
-            Github repo
-          </a>
-        </button>
+        >
+          <button type="button" className="btn btn-primary">
+          Github repo
+          </button>
+        </a>
+
+        <div className="divider"></div>
+        
+        <a
+            href="https://github.com/mandarker/Colormancy/releases/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Github repo for the project."
+            className="whiteTextButton"
+            onClick={CheckColormancy}
+        >
+          <button type="button" className="btn btn-success">
+          Download
+          </button>
+        </a>
       </div>
       <br />
     </div>

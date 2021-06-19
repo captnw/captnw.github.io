@@ -20,7 +20,6 @@ function ProjectsPage() {
           This page is dedicated to showcasing all of my various games and
           projects.
         </p>
-        <p>Feel free to look at the assets, source code, and even use them.</p>
       </div>
 
       {/* Place projects under here! */}

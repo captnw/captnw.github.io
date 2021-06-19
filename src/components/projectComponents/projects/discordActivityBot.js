@@ -62,18 +62,20 @@ function DiscordActivityBot() {
             server?)
           </li>
         </ul>
-        <button type="button" className="btn btn-primary">
-          <a
+
+        <a
             href="https://github.com/captnw/DiscordUserScheduleBot"
             target="_blank"
             rel="noopener noreferrer"
             title="Github repo for the project."
             className="whiteTextButton"
             onClick={CheckDiscordUserBot}
-          >
+        >
+          <button type="button" className="btn btn-primary">
             Github repo
-          </a>
-        </button>
+          </button>
+        </a>
+        
       </div>
       <br />
     </div>

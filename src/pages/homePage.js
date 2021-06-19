@@ -13,7 +13,7 @@ function Homepage() {
       </h3>
       <br />
       <p className="horizontalCenter">
-        I'm a 3rd year undergraduate UCI student double-majoring in computer
+        I'm a 4th year undergraduate UCI student double-majoring in computer
         science and computer game science.
       </p>
       <hr></hr>
