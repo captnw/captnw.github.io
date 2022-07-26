@@ -36,7 +36,7 @@ function SocialMedia() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="mailto:williann@uci.edu"
+            href="mailto:williamngoc93@hotmail.com"
             title="Email me"
             id="websiteIconTheme"
           >

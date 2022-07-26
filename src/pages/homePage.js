@@ -13,8 +13,8 @@ function Homepage() {
       </h3>
       <br />
       <p className="horizontalCenter">
-        I'm a 4th year undergraduate UCI student double-majoring in computer
-        science and computer game science.
+        2022 UCI student computer
+        science and computer game science graduate.
       </p>
       <hr></hr>
       <SocialMedia />
