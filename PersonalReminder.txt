@@ -13,4 +13,5 @@ HOW TO MAKE CHANGES TO WEBSITE:
 (saving changes + deployment)
 -1) git add, commit changes
 -2) run the command "npm run deploy"
+- (NOTE FOR STEP 2) The specifics on what "deploy" does can be seen in package.json, scripts.
 -3) push "git push -u origin master"
