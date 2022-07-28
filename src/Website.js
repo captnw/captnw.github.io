@@ -2,9 +2,9 @@
 import "./Assets/css/default.min.css"; // our custom css
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// components
+// Elements
 import Header from "./components/headerComponents/header";
 import Homepage from "./pages/homePage";
 import ResumePage from "./pages/resumePage";
@@ -24,13 +24,13 @@ function Website() {
     <div className="fullishHeight">
       <Router>
         <Header />
-        <Switch>
-          <Route path="/" exact component={Homepage} />
-          <Route path="/resume" exact component={ResumePage} />
-          <Route path="/projects" exact component={ProjectsPage} />
-          <Route path="/projects/Colormancy" exact component={ColormancyProjectPage} />
+        <Routes>
+          <Route exact path="/" element={<Homepage/>} />
+          <Route exact path="/resume" element={<ResumePage/>} />
+          <Route exact path="/projects" element={<ProjectsPage/>} />
+          <Route exact path="/projects/Colormancy" element={<ColormancyProjectPage/>} />
           <Route component={NoMatch} />
-        </Switch>
+        </Routes>
       </Router>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import SocialMedia from "../components/socialMediaComponent/socialMediaBar";
+import SocialMedia from "../components/socialMediaComponents/socialMediaBar";
 
 // What visitors first see.
 
