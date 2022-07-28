@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.57eeeff8.css",
-    "main.js": "/static/js/main.260ab760.js",
+    "main.js": "/static/js/main.3ec27d73.js",
     "static/media/Colormancy_1.gif": "/static/media/Colormancy_1.0f8a7b9f73566784dc48.gif",
     "static/media/JohnJump_3.gif": "/static/media/JohnJump_3.8aded0c8658a1af43507.gif",
     "static/media/MoneyPay_3.gif": "/static/media/MoneyPay_3.eb7767b21b7266c6cba5.gif",
@@ -22,13 +22,13 @@
     "static/media/JohnJump_1.jpg": "/static/media/JohnJump_1.1df449cd1b2007c9cf86.jpg",
     "static/media/DiscordActivityBot_3.jpg": "/static/media/DiscordActivityBot_3.83814ca0316efa4eb9ad.jpg",
     "static/media/PandemicPanicBot_1.jpg": "/static/media/PandemicPanicBot_1.5b2ad44b862eef45f203.jpg",
-    "static/media/DiscordActivityBot_1.svg": "/static/media/DiscordActivityBot_1.8af90e06942233ad93db910a053ee639.svg",
+    "static/media/DiscordActivityBot_1.svg": "/static/media/DiscordActivityBot_1.c15fb009813d80ba621b5e38119074e2.svg",
     "index.html": "/index.html",
     "main.57eeeff8.css.map": "/static/css/main.57eeeff8.css.map",
-    "main.260ab760.js.map": "/static/js/main.260ab760.js.map"
+    "main.3ec27d73.js.map": "/static/js/main.3ec27d73.js.map"
   },
   "entrypoints": [
     "static/css/main.57eeeff8.css",
-    "static/js/main.260ab760.js"
+    "static/js/main.3ec27d73.js"
   ]
 }
