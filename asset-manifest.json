@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.57eeeff8.css",
-    "main.js": "/static/js/main.3ec27d73.js",
+    "main.js": "/static/js/main.d23b8330.js",
     "static/media/Colormancy_1.gif": "/static/media/Colormancy_1.0f8a7b9f73566784dc48.gif",
     "static/media/JohnJump_3.gif": "/static/media/JohnJump_3.8aded0c8658a1af43507.gif",
     "static/media/MoneyPay_3.gif": "/static/media/MoneyPay_3.eb7767b21b7266c6cba5.gif",
-    "static/media/DiscordActivityBot_2.jpg": "/static/media/DiscordActivityBot_2.e992cd8d29ffe667c3eb.jpg",
+    "static/media/DiscordActivityBot_2.JPG": "/static/media/DiscordActivityBot_2.e992cd8d29ffe667c3eb.JPG",
     "static/media/SimpleDungeon_3.gif": "/static/media/SimpleDungeon_3.5bee0e4fc900b77ef466.gif",
     "static/media/logoDark.svg": "/static/media/logoDark.647fb2be0757b473bba3135f4a20362c.svg",
     "static/media/Colormancy_3.JPG": "/static/media/Colormancy_3.4476362716bc45349743.JPG",
@@ -25,10 +25,10 @@
     "static/media/DiscordActivityBot_1.svg": "/static/media/DiscordActivityBot_1.c15fb009813d80ba621b5e38119074e2.svg",
     "index.html": "/index.html",
     "main.57eeeff8.css.map": "/static/css/main.57eeeff8.css.map",
-    "main.3ec27d73.js.map": "/static/js/main.3ec27d73.js.map"
+    "main.d23b8330.js.map": "/static/js/main.d23b8330.js.map"
   },
   "entrypoints": [
     "static/css/main.57eeeff8.css",
-    "static/js/main.3ec27d73.js"
+    "static/js/main.d23b8330.js"
   ]
 }
