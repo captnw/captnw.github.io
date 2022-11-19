@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.57eeeff8.css",
-    "main.js": "/static/js/main.1412b1c7.js",
+    "main.js": "/static/js/main.53ae6f93.js",
     "static/media/Colormancy_1.gif": "/static/media/Colormancy_1.0f8a7b9f73566784dc48.gif",
     "static/media/JohnJump_3.gif": "/static/media/JohnJump_3.8aded0c8658a1af43507.gif",
     "static/media/MoneyPay_3.gif": "/static/media/MoneyPay_3.eb7767b21b7266c6cba5.gif",
@@ -15,7 +15,7 @@
     "static/media/MoneyPay_1.jpg": "/static/media/MoneyPay_1.3ff28a11e000e8870208.jpg",
     "static/media/SimpleDungeon_1.jpg": "/static/media/SimpleDungeon_1.73053f8a6f323b0de303.jpg",
     "static/media/logoLight.svg": "/static/media/logoLight.a90f015ff99742d650142b44846bb88e.svg",
-    "static/media/WilliamNguyenResume.pdf": "/static/media/WilliamNguyenResume.e10636bb7bbd9d50dce2.pdf",
+    "static/media/WilliamNguyenResume.pdf": "/static/media/WilliamNguyenResume.67f734ce8d3c59920dab.pdf",
     "static/media/PandemicPanicBot_2.jpg": "/static/media/PandemicPanicBot_2.02e03ae1d37b2604d021.jpg",
     "static/media/Colormancy_1.JPG": "/static/media/Colormancy_1.557a32f3a731f94aca9d.JPG",
     "static/media/MoneyPay_2.jpg": "/static/media/MoneyPay_2.fdfc07918b96c6ee55d4.jpg",
@@ -25,10 +25,10 @@
     "static/media/DiscordActivityBot_1.svg": "/static/media/DiscordActivityBot_1.c15fb009813d80ba621b5e38119074e2.svg",
     "index.html": "/index.html",
     "main.57eeeff8.css.map": "/static/css/main.57eeeff8.css.map",
-    "main.1412b1c7.js.map": "/static/js/main.1412b1c7.js.map"
+    "main.53ae6f93.js.map": "/static/js/main.53ae6f93.js.map"
   },
   "entrypoints": [
     "static/css/main.57eeeff8.css",
-    "static/js/main.1412b1c7.js"
+    "static/js/main.53ae6f93.js"
   ]
 }
