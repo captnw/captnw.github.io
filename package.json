@@ -49,7 +49,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.3",
     "gulp-clean-css": "^4.3.0",
