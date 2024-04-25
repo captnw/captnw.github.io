@@ -13,8 +13,11 @@ function Homepage() {
       </h3>
       <br />
       <p className="horizontalCenter">
-        2022 UCI student computer
-        science and computer game science graduate.
+        Graduated from UCI in 2022 - double majored in computer science and computer game science.
+      </p>
+      <br />
+      <p className="horizontalCenter">
+        Now working at Edwards Lifesciences as a Software test engineer.
       </p>
       <hr></hr>
       <SocialMedia />

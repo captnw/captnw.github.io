@@ -18,8 +18,10 @@ function ProjectsPage() {
         <br />
         <p>
           This page is dedicated to showcasing all of my various games and
-          projects. If there is a project not listed here, it's sitting in an empty Github repo due to the fact that its a school project and people
-          may plagiarize it.
+          projects.
+        </p>
+        <p>
+          If there is a project not listed here, it may be a school project sitting in an private Github repo (this avoids the whole plagiarism issue)
         </p>
       </div>
 
